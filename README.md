@@ -25,7 +25,7 @@
 
 |**Exemplo**|
 |:-:|
-|![Img do DER](./assets/)|
+|![Img do DER](./assets/DER.jpeg)|
 ## Back-End
 
 - ### Projeto
