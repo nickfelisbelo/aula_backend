@@ -1,0 +1,187 @@
+{
+  "_type": "export",
+  "__export_format": 4,
+  "__export_date": "2026-09-09T19:08:11.606Z",
+  "__export_source": "backend-aula",
+  "resources": [
+    {
+      "_id": "wrk_backend",
+      "_type": "workspace",
+      "name": "Backend Aula"
+    },
+    {
+      "_id": "fld_back",
+      "_type": "request_group",
+      "parentId": "wrk_backend",
+      "name": "back"
+    },
+    {
+      "_id": "fld_Usuario",
+      "_type": "request_group",
+      "parentId": "fld_back",
+      "name": "Usuario"
+    },
+    {
+      "_id": "req_Usuario_GET_ALL",
+      "_type": "request",
+      "parentId": "fld_Usuario",
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "name": "Listar",
+      "method": "GET",
+      "url": "http://localhost:3000/usuario/listar"
+    },
+    {
+      "_id": "req_Usuario_GET_ID",
+      "_type": "request",
+      "parentId": "fld_Usuario",
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "name": "Buscar",
+      "method": "GET",
+      "url": "http://localhost:3000/usuario/buscar/:id"
+    },
+    {
+      "_id": "req_Usuario_POST",
+      "_type": "request",
+      "parentId": "fld_Usuario",
+      "name": "Cadastrar",
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "method": "POST",
+      "url": "http://localhost:3000/usuario/cadastrar",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n  \"nome\": \"string\",\n  \"telefone\": \"string\"\n}"
+      }
+    },
+    {
+      "_id": "req_Usuario_PUT",
+      "_type": "request",
+      "parentId": "fld_Usuario",
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "name": "Atualizar",
+      "method": "PUT",
+      "url": "http://localhost:3000/usuario/atualizar/:id",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n  \"nome\": \"string\",\n  \"telefone\": \"string\"\n}"
+      }
+    },
+    {
+      "_id": "req_Usuario_DELETE",
+      "_type": "request",
+      "parentId": "fld_Usuario",
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "name": "Excluir",
+      "method": "DELETE",
+      "url": "http://localhost:3000/usuario/excluir/:id"
+    },
+    {
+      "_id": "fld_Emprestimo",
+      "_type": "request_group",
+      "parentId": "fld_back",
+      "name": "Emprestimo"
+    },
+    {
+      "_id": "req_Emprestimo_GET_ALL",
+      "_type": "request",
+      "parentId": "fld_Emprestimo",
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "name": "Listar",
+      "method": "GET",
+      "url": "http://localhost:3000/emprestimo/listar"
+    },
+    {
+      "_id": "req_Emprestimo_GET_ID",
+      "_type": "request",
+      "parentId": "fld_Emprestimo",
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "name": "Buscar",
+      "method": "GET",
+      "url": "http://localhost:3000/emprestimo/buscar/:id"
+    },
+    {
+      "_id": "req_Emprestimo_POST",
+      "_type": "request",
+      "parentId": "fld_Emprestimo",
+      "name": "Cadastrar",
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "method": "POST",
+      "url": "http://localhost:3000/emprestimo/cadastrar",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n  \"livro\": \"string\",\n  \"data_emprestimo\": \"2026-09-09T19:08:11.604Z\",\n  \"data_devolucao\": \"2026-09-09T19:08:11.606Z\",\n  \"usuarioId\": 0\n}"
+      }
+    },
+    {
+      "_id": "req_Emprestimo_PUT",
+      "_type": "request",
+      "parentId": "fld_Emprestimo",
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "name": "Atualizar",
+      "method": "PUT",
+      "url": "http://localhost:3000/emprestimo/atualizar/:id",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n  \"livro\": \"string\",\n  \"data_emprestimo\": \"2026-09-09T19:08:11.604Z\",\n  \"data_devolucao\": \"2026-09-09T19:08:11.606Z\",\n  \"usuarioId\": 0\n}"
+      }
+    },
+    {
+      "_id": "req_Emprestimo_DELETE",
+      "_type": "request",
+      "parentId": "fld_Emprestimo",
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "name": "Excluir",
+      "method": "DELETE",
+      "url": "http://localhost:3000/emprestimo/excluir/:id"
+    }
+  ]
+}
