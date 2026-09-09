@@ -31,8 +31,8 @@
 - ### Projeto
     Para começar nossa aula é preciso clonar este repositório e abri-lo com o code
     ```
-    git clone 
-    cd 
+    git clone https://github.com/nickfelisbelo/aula_backend
+    cd aula_backend
     code .
     ```
 
