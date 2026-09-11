@@ -111,7 +111,7 @@
     Aqui você pode criar normalmente ou usar a extensão do Reenye, caso deseje utilizar a dependência do Reenye, siga o passo a passo:
     - Baixe a extensão:
     ```
-    npx -g backend-aula
+    npx i -g backend-aula
     ```
     - Após baixar utilize o comando:
     ```
