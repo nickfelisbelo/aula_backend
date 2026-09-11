@@ -1,5 +1,7 @@
 # Aula de Back-End / DER
 
+**[Link Kahoot](https://create.kahoot.it/details/66e44913-e217-435d-a2e0-b16dea4b7107)**
+
 ## Tópicos
 - **DER**
     - Entidades
