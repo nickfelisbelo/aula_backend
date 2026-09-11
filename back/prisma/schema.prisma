@@ -5,21 +5,3 @@ generator client {
 datasource db {
   provider = "mysql"
 }
-
-model Usuario {
-    id       Int    @id @default(autoincrement())
-    nome     String
-    telefone String
-
-    emprestimos Emprestimo[]
-}
-
-model Emprestimo {
-    id        Int    @id @default(autoincrement())
-    livro     String
-    data_emprestimo DateTime
-    data_devolucao DateTime
-    usuarioId Int
-
-    usuario Usuario @relation(fields: [usuarioId], references: [id])
-}
